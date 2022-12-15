@@ -23,6 +23,13 @@ import {
   ChevronRightIcon,
 } from '@chakra-ui/icons';
 
+import React from "react"
+import { AiOutlineGlobal } from 'react-icons/ai';
+class Question extends React.Component {
+  render() {
+    return <AiOutlineGlobal />
+  }
+}
 
 
 
@@ -35,8 +42,8 @@ export default function Navbar() {
   return (
     
     <Box>
-      <Text p={'0.8%'} bg={'#007860'}>Give your teams the gift of Wrike this holiday season and you’ll get a free gift, too! <Link textDecoration={'underline'}>Learn more.</Link><CloseIcon  onClick={handleClick} ml={'1%'} fontSize={'10px'}/></Text>
-      <Flex
+      <Text p={'0.8%'} bg={'#007860'}>Give your teams the gift of Wrike this holiday season and you'll get a free gift, too! <Link textDecoration={'underline'}>Learn more.</Link><CloseIcon  onClick={handleClick} ml={'1%'} fontSize={'10px'}/></Text>
+      <Flex width={'85%'} margin={'auto'} fontSize={'large'}
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
         minH={'60px'}
@@ -60,7 +67,7 @@ export default function Navbar() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <img align={'center'} width={'3%'} src="https://previews.123rf.com/images/nappelbaum/nappelbaum1610/nappelbaum161000013/64571350-bowling-emblem-and-badge-club-gaming-play-skittle-and-strike-illustration-template-for-bowling-club-.jpg" alt="" />
+          <img align={'center'} width={'5%'} src="https://previews.123rf.com/images/nappelbaum/nappelbaum1610/nappelbaum161000013/64571350-bowling-emblem-and-badge-club-gaming-play-skittle-and-strike-illustration-template-for-bowling-club-.jpg" alt="" />
           
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
@@ -98,11 +105,11 @@ export default function Navbar() {
               bg: '#0c3245',
             }}
             >
-             En
+            <AiOutlineGlobal /> En
           </Button>
           <Button
             as={'a'}
-            fontSize={'sm'}
+            fontSize={'l'}
             color={'#08cf65'}
             fontWeight={400}
             variant={'link'}
@@ -111,7 +118,7 @@ export default function Navbar() {
           </Button>
           <Button
             display={{ base: 'none', md: 'inline-flex' }}
-            fontSize={'sm'}
+            fontSize={'l'}
             fontWeight={600}
             color={'white'}
             bg={'#08cf65'}
@@ -147,14 +154,14 @@ const DesktopNav = () => {
               <Link
                 p={2}
                 href={navItem.href ?? '#'}
-                fontSize={'sm'}
+                fontSize={'l'}
                 fontWeight={500}
                 color={linkColor}
                 _hover={{
                   textDecoration: 'none',
                   color: linkHoverColor,
                 }}>
-                {navItem.label}<Icon color={'pink.400'} w={5} h={5} as={ChevronDownIcon} /> 
+                {navItem.label}<Icon color={'white.400'} w={5} h={5} as={ChevronDownIcon} /> 
               </Link>
             </PopoverTrigger>
 
@@ -229,7 +236,7 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Why Strike? v',
+    label: 'Why Strike? ',
     children: [
       {
         tag: 'For Teams',
@@ -278,7 +285,7 @@ const NAV_ITEMS: Array<NavItem> = [
     ],
   },
   {
-    label: 'Features  v',
+    label: 'Features ',
     children: [
       {
         tag: '',
@@ -294,7 +301,7 @@ const NAV_ITEMS: Array<NavItem> = [
     ],
   },
   {
-    label: 'Resources  v',
+    label: 'Resources  ',
     children: [
       {
         label: 'Job Board',
@@ -309,7 +316,7 @@ const NAV_ITEMS: Array<NavItem> = [
     ],
   },
   {
-    label: 'Pricing',
+    label: 'Pricing  ',
     href: '#',
   },
 ];
