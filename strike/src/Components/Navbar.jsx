@@ -12,7 +12,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
 } from '@chakra-ui/react';
 
@@ -25,11 +24,7 @@ import {
 
 import React from "react"
 import { AiOutlineGlobal } from 'react-icons/ai';
-class Question extends React.Component {
-  render() {
-    return <AiOutlineGlobal />
-  }
-}
+
 
 
 
@@ -41,11 +36,12 @@ export default function Navbar() {
   }
   return (
     
-    <Box>
-      <Text p={'0.8%'} bg={'#007860'}>Give your teams the gift of Wrike this holiday season and you'll get a free gift, too! <Link textDecoration={'underline'}>Learn more.</Link><CloseIcon  onClick={handleClick} ml={'1%'} fontSize={'10px'}/></Text>
+    <Box bgColor={'#181f38'} >
+      <Text p={'0.8%'} bg={'#007860'} color={'white'}>Give your teams the gift of Wrike this holiday season and you'll get a free gift, too! <Link textDecoration={'underline'}>Learn more.</Link><CloseIcon  onClick={handleClick} ml={'1%'} fontSize={'10px'}/></Text>
       <Flex width={'85%'} margin={'auto'} fontSize={'large'}
-        bg={useColorModeValue('white', 'gray.800')}
-        color={useColorModeValue('gray.600', 'white')}
+     
+        bg={useColorModeValue('#181f38', 'white')}
+        color={useColorModeValue('white', 'white')}
         minH={'60px'}
         py={{ base: 2 }}
         px={{ base: 4 }}
@@ -66,10 +62,10 @@ export default function Navbar() {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+        <Flex flex={{ base: 1 }} color={'white'} justify={{ base: 'center', md: 'start' }}>
           <img align={'center'} width={'5%'} src="https://previews.123rf.com/images/nappelbaum/nappelbaum1610/nappelbaum161000013/64571350-bowling-emblem-and-badge-club-gaming-play-skittle-and-strike-illustration-template-for-bowling-club-.jpg" alt="" />
           
-          <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+          <Flex display={{ base: 'none', md: 'flex' }} ml={10} >
             <DesktopNav />
           </Flex>
         </Flex>
@@ -86,7 +82,7 @@ export default function Navbar() {
             color={'white'}
             margin={'auto'}
             href={'#'}
-            bg= {'#1a202c'}
+            bg= {'#181f38'}
             _hover={{
               bg: '#0c3245',
             }}
@@ -100,7 +96,7 @@ export default function Navbar() {
             color={'white'}
             margin={'auto'}
             href={'#'}
-            bg= {'#1a202c'}
+            bg= {'#181f38'}
             _hover={{
               bg: '#0c3245',
             }}
@@ -141,9 +137,9 @@ export default function Navbar() {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue('gray.600', 'gray.200');
-  const linkHoverColor = useColorModeValue('gray.800', 'white');
-  const popoverContentBgColor = useColorModeValue('white', 'gray.800');
+  const linkColor = useColorModeValue('white', 'white');
+  const linkHoverColor = useColorModeValue('white', 'white');
+  const popoverContentBgColor = useColorModeValue('white', 'white');
 
   return (
     <Stack direction={'row'} spacing={4}>
@@ -195,6 +191,7 @@ const DesktopSubNav = ({ tag, label, href, subLabel }: NavItem) => {
       role={'group'}
       display={'block'}
       p={2}
+      color={'black'}
       rounded={'md'}
       _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
       <Stack direction={'row'} align={'center'}>
@@ -206,7 +203,6 @@ const DesktopSubNav = ({ tag, label, href, subLabel }: NavItem) => {
             _groupHover={{ color: 'pink.400' }}
             fontWeight={500}>
             {label}
-
           </Text>
           <Text fontSize={'sm'}>{subLabel}</Text>
         </Box>

@@ -9,18 +9,18 @@ class Question extends React.Component {
 }
 function BgImage() {
     return (
-        <Box>
+        <Box bgColor={'#181f38'}>
             <Box margin={'auto'} width={'80%'} fontFamily={'TT_Norms_Pro,-apple-system,BlinkMacSystemFont,Helvetica Neue,Segoe UI,Roboto,Oxygen-Sans,Fira Sans,Droid Sans,Ubuntu,Cantarell,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol;'}>
                 <Grid templateColumns='repeat(2, 1fr)'>
                     <Box textAlign={'left'}>
-                        <Box mt={'6%'} fontSize={'50px'} fontWeight={'extrabold'}>
+                        <Box color={'white'} mt={'6%'} fontSize={'50px'} fontWeight={'extrabold'}>
                             <Text >Remove barriers,</Text>
                             <Text>find clarity,</Text>
                             <Text>exceed goals</Text>
                         </Box>
                         <Text noOfLines={[1, 2]} fontSize={'18px'} fontWeight={'400'}>Anything is possible with the most powerful work management software at your fingertips.</Text>
-                        <Input placeholder='extra small size' color={'black'} bgColor={'white'} p={'4%'} mt={'5%'} width={'60%'} type="email" />
-                        <Button bg={'#08cf65'} fontSize={'18px'} p={'4.3%'} width={'30%'} ml={'5%'}>Get Started</Button>
+                        <Input placeholder='Enter your business email' color={'black'} bgColor={'white'} p={'4%'} mt={'5%'} width={'60%'} type="email" />
+                        <Button color={'white'} bg={'#08cf65'} fontSize={'18px'} p={'4.3%'} width={'30%'} ml={'5%'} _hover={{bg:'#007860'}}>Get Started</Button>
                         <Flex mt={'2%'} fontSize={'larger'} gap={'10px'} alignItems={'center'}><AiOutlinePlayCircle fontSize={'larger'} color={'#08cf65'} /><Text color={'#08cf65'}>Explore our new platform</Text></Flex>
                     </Box>
 
