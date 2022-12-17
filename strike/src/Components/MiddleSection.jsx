@@ -20,6 +20,7 @@ function MiddleSection(){
             </Box>
             </Flex>
             </Box>
+            
         </Box>
     )
 }

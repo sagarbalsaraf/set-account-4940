@@ -2,6 +2,7 @@ import {Card, CardBody, Image, Stack, Heading, Text, CardFooter, Box, Flex, Butt
 import { NavLink } from "react-router-dom"
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import MiddleSection from "./MiddleSection"
+import Middle2 from "./Middle2"
 
 
 
@@ -125,6 +126,7 @@ function CardLink(){
 <Text p={'4%'} fontSize={'xl'} fontWeight={'medium'} color= {'#007860'}>See all teams <ArrowForwardIcon fontSize={'20px'}/></Text>
 <Button width={'15%'} p={'2.2%'} bg={'#08cf65'} fontSize={'2xl'} color={'white'} _hover={{bg:'#08cf66'}}>Get Started</Button>
 <MiddleSection/>
+<Middle2/>
 </Box>
     )
 }

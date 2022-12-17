@@ -38,9 +38,9 @@ export default function Navbar() {
     
     <Box bgColor={'#181f38'} >
       <Text p={'0.8%'} bg={'#007860'} color={'white'}>Give your teams the gift of Wrike this holiday season and you'll get a free gift, too! <Link textDecoration={'underline'}>Learn more.</Link><CloseIcon  onClick={handleClick} ml={'1%'} fontSize={'10px'}/></Text>
-      <Flex width={'85%'} margin={'auto'} fontSize={'large'}
+      <Flex width={'85%'} margin={'auto'} fontSize={'large'} 
      
-        bg={useColorModeValue('#181f38', 'white')}
+        bg={useColorModeValue('white', '#181f38')}
         color={useColorModeValue('white', 'white')}
         minH={'60px'}
         py={{ base: 2 }}
@@ -142,7 +142,7 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue('white', 'white');
 
   return (
-    <Stack direction={'row'} spacing={4}>
+    <Stack direction={'row'} spacing={4} >
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
