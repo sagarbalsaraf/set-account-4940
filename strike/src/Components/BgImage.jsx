@@ -19,7 +19,7 @@ function BgImage() {
                             <Text>exceed goals</Text>
                         </Box>
                         <Text noOfLines={[1, 2]} fontSize={'18px'} fontWeight={'400'}>Anything is possible with the most powerful work management software at your fingertips.</Text>
-                        <Input placeholder='Enter your business email' color={'black'} bgColor={'white'} p={'4%'} mt={'5%'} width={'60%'} type="email" />
+                        <Input placeholder='Enter your business email' bg={'white'} color={'black'}  p={'4%'} mt={'5%'} width={'60%'} type="email" />
                         <Button color={'white'} bg={'#08cf65'} fontSize={'18px'} p={'4.3%'} width={'30%'} ml={'5%'} _hover={{bg:'#007860'}}>Get Started</Button>
                         <Flex mt={'2%'} fontSize={'larger'} gap={'10px'} alignItems={'center'}><AiOutlinePlayCircle fontSize={'larger'} color={'#08cf65'} /><Text color={'#08cf65'}>Explore our new platform</Text></Flex>
                     </Box>
