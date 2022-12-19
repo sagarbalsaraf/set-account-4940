@@ -24,6 +24,7 @@ import {
 
 import React from "react"
 import { AiOutlineGlobal } from 'react-icons/ai';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -103,15 +104,18 @@ export default function Navbar() {
             >
             <AiOutlineGlobal /> En
           </Button>
+          <NavLink replace to={'/login'}  target={'_self'}>
           <Button
-            as={'a'}
+            mt={'12%'}
             fontSize={'l'}
             color={'#08cf65'}
             fontWeight={400}
             variant={'link'}
-            href={'#'}>
+            >  
             Log in
+            
           </Button>
+          </NavLink>
           <Button
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'l'}
