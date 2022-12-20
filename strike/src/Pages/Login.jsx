@@ -6,7 +6,7 @@ import {
   Button,
   FormControl,
   FormLabel,
-  Switch,
+  Text,
   useColorMode,
   useColorModeValue,
 } from '@chakra-ui/react';
@@ -16,20 +16,21 @@ import { NavLink } from 'react-router-dom';
 
 
 const Login = () => {
-  const { toggleColorMode } = useColorMode();
   const formBackground = useColorModeValue('gray.100', 'gray.700');
-
+  const handleClick=()=> {
+    alert('Sign in successfull'+"\n"+"Get Ready to Explore more")
+  }
 
   return (
     <Flex h="100vh" alignItems="center" justifyContent="center">
       <Flex
         flexDirection="column"
-        bg={formBackground}
+        bg={'teal'}
         p={12}
         borderRadius={8}
         boxShadow="lg"
       >
-        <Heading mb={6}>Log In</Heading>
+        <Heading color={'white'} mb={6}>Log In</Heading>
         <Input
           placeholder="johndoe@gmail.com"
           type="email"
@@ -43,8 +44,8 @@ const Login = () => {
           mb={6}
         />
         <NavLink to={'/'} target={'_self'}>
-        <Button disabled={Input.variant} colorScheme="teal" mb={8}>
-          Log In
+        <Button  disabled={Input.variant} colorScheme="teal" mb={8}>
+         <Text color={'white'} onClick={handleClick} >Log In</Text> 
         </Button>
         </NavLink>
         <FormControl display="flex" alignItems="center">

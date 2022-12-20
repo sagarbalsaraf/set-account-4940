@@ -41,7 +41,7 @@ export default function Navbar() {
       <Text p={'0.8%'} bg={'#007860'} color={'white'}>Give your teams the gift of Wrike this holiday season and you'll get a free gift, too! <Link textDecoration={'underline'}>Learn more.</Link><CloseIcon  onClick={handleClick} ml={'1%'} fontSize={'10px'}/></Text>
       <Flex width={'85%'} margin={'auto'} fontSize={'large'} 
      
-        bg={useColorModeValue('white', '#181f38')}
+        bg={useColorModeValue('#181f38', '#181f38')}
         color={useColorModeValue('white', 'white')}
         minH={'60px'}
         py={{ base: 2 }}
@@ -225,15 +225,6 @@ const DesktopSubNav = ({ tag, label, href, subLabel }) => {
     </Link>
   );
 };
-
-
-interface NavItem {
-  label: string;
-  subLabel?: string;
-  children?: Array<NavItem>;
-  href?: string;
-}
-
 const NAV_ITEMS= [
   {
     label: 'Why Strike? ',

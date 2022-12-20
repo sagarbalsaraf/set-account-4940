@@ -9,7 +9,7 @@ function Middle2() {
     return (
         <Box>
             <Box bg={'#0c3245'} p={'4%'}>
-                <Box width={'80%'} margin={'auto'} >
+                <Box width={'80%'} margin={'auto'} color={'white'}>
                     <Text width={'50%'} margin={'auto'} fontSize={'4xl'} fontWeight={'bold'}>
                         The Most Versatile Work Management Platform™
                     </Text>
@@ -19,7 +19,7 @@ function Middle2() {
                 </Box>
 
                 <Box >
-                    <Box width={'45%'} margin={'auto'} >
+                    <Box color={'white'} width={'45%'} margin={'auto'} >
                         <Flex gap={'5%'} margin={'auto'} fontSize={'18px'} fontWeight={'bold'} borderBottom={'1px solid #08cf65'} paddingBottom={'16px'}>
                             <Text _hover={{ color: "#08cf65" }}><Link>Dashboards</Link></Text>
                             <Text _hover={{ color: "#08cf65" }}><Link>Cross-tagging</Link></Text>
@@ -31,7 +31,7 @@ function Middle2() {
                     <Box width={'90%'} margin={'auto'} mt={'4%'}>
 
                         <Flex gap={'6%'}>
-                            <Box textAlign={'left'} margin={'auto'}>
+                            <Box color={'white'} textAlign={'left'} margin={'auto'}>
                                 <Heading>Customizable dashboards</Heading>
                                 <Text fontSize={'18px'} mt={'8%'}>Never miss a task with personalized dashboards. See what your team is working on in a comprehensive view and share progress across the organization.</Text>
                                 <Text fontSize={'18px'} mt={'8%'}>Get a detailed overview of workloads, pin important to-dos, follow important tasks, and choose exactly what you want to see to keep a close eye on progress.</Text>
