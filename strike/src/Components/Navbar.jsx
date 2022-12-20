@@ -187,7 +187,7 @@ const DesktopNav = () => {
   );
 };
 
-const DesktopSubNav = ({ tag, label, href, subLabel }: NavItem) => {
+const DesktopSubNav = ({ tag, label, href, subLabel }) => {
   return (
     
     <Link
@@ -234,7 +234,7 @@ interface NavItem {
   href?: string;
 }
 
-const NAV_ITEMS: Array<NavItem> = [
+const NAV_ITEMS= [
   {
     label: 'Why Strike? ',
     children: [
