@@ -7,8 +7,6 @@ import {
   FormControl,
   FormLabel,
   Text,
-  useColorMode,
-  useColorModeValue,
 } from '@chakra-ui/react';
 import { NavLink } from 'react-router-dom';
 
@@ -16,7 +14,6 @@ import { NavLink } from 'react-router-dom';
 
 
 const Login = () => {
-  const formBackground = useColorModeValue('gray.100', 'gray.700');
   const handleClick=()=> {
     alert('Sign in successfull'+"\n"+"Get Ready to Explore more")
   }
@@ -26,21 +23,28 @@ const Login = () => {
       <Flex
         flexDirection="column"
         bg={'teal'}
-        p={12}
+        p={20}
         borderRadius={8}
         boxShadow="lg"
       >
         <Heading color={'white'} mb={6}>Log In</Heading>
+        <Text mb={'2%'} fontWeight={'bold'} fontSize={'20px'} color={'white'}> For Strike</Text>
+        <Text fontSize={'20px'} textAlign={'left'} color={'white'}>Email</Text>
         <Input
-          placeholder="johndoe@gmail.com"
+          placeholder="yourmail@gmail.com"
           type="email"
           variant="filled"
+          width={'120%'}
           mb={3}
         />
+        <Text fontSize={'20px'} textAlign={'left'} color={'white'}>Password</Text>
+
         <Input
           placeholder="**********"
           type="password"
           variant="filled"
+          width={'120%'}
+
           mb={6}
         />
         <NavLink to={'/'} target={'_self'}>
@@ -49,7 +53,7 @@ const Login = () => {
         </Button>
         </NavLink>
         <FormControl display="flex" alignItems="center">
-          <FormLabel htmlFor="dark_mode" mb="0">
+          <FormLabel color={'white'} htmlFor="dark_mode" mb="0">
             Please put your credentials.
           </FormLabel>
         </FormControl>

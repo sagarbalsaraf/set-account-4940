@@ -116,18 +116,21 @@ export default function Navbar() {
             
           </Button>
           </NavLink>
+          <NavLink replace to={'/signup'}  target={'_self'}>
+
           <Button
             display={{ base: 'none', md: 'inline-flex' }}
             fontSize={'l'}
             fontWeight={600}
             color={'white'}
             bg={'#08cf65'}
-            href={'#'}
+            
             _hover={{
               bg: '#007860',
             }}>
             Start for Free
           </Button>
+          </NavLink>
         </Stack>
       </Flex>
 
